@@ -72,31 +72,37 @@ body{
 #card4:hover,#card1:hover,#card2:hover,#card3:hover{box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);}
 
 .signup{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 20px;
-    padding: 74px;
+    margin: 20px auto;
+    padding: 40px 50px;
     background-color: antiquewhite;
-    text-align:justify ;
+    text-align:center ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width:100%;
+    max-width: 500px;
 }
+
 .signup input{
-    padding: 7px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width:100%;
 }
 .signup button{
     background-color: white;
     color: black;
     border-radius: 5px;
-    width: 75%;
-    padding: 6px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
 
 }
 .signup button:hover{
     background-color: aqua;
 }
 fieldset input{
-    text-align: center;
     align-items: center;
 }
 #Blist div{
@@ -222,51 +228,7 @@ fieldset input{
     padding: 1rem;
     margin: 1rem 0;
   }
-    /*9. fieldset styling*/
-     fieldset {
-    width: 100%;
-    min-width: 0; /* Prevents horizontal scrolling */
-    padding: 1rem;
-    margin: 1rem 0;
-    box-sizing: border-box;
-  }
-  
-  legend {
-    font-size: 1.1rem;
-    padding: 0 0.5rem;
-    margin-bottom: 0.5rem;
-    float: none;
-    width: 100%;
-  }
-  
-  /* Ensure form elements inside fieldset are responsive */
-  fieldset input,
-  fieldset select,
-  fieldset textarea {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Stack radio buttons and checkboxes vertically */
-  fieldset label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* For inline form elements */
-  .form-row {
-    flex-direction: column;
-    margin-bottom: 0.75rem;
-  }
-  
-  .form-row label,
-  .form-row input {
-    width: 100%;
-    margin-bottom: 0.25rem;
-  }
-}
-
+ 
   
   /* Contact page specific */
   .contact-container {
@@ -277,6 +239,25 @@ fieldset input{
     width: 100%;
     margin-bottom: 1.5rem;
   }
+}
+.signup {
+        width: 95%; /* Use almost full screen width */
+        max-width: none; /* Remove the desktop max-width */
+        margin: 10px auto; /* Less margin on mobile */
+        padding: 25px 20px; /* Much smaller padding for mobile */
+    }
+    
+    .signup input {
+        padding: 14px; /* Even larger for mobile touch targets */
+        margin: 12px 0; /* More spacing between fields */
+        font-size: 16px; /* Prevents iOS zoom */
+    }
+    
+    .signup button {
+        padding: 16px; /* Larger for easy tapping */
+        font-size: 18px; /* More readable on mobile */
+        font-weight: bold;
+    }
 }
 
 /* ===== Extra Small Devices (Phones < 480px) ===== */
@@ -307,22 +288,18 @@ fieldset input{
     width: 100%;
     margin-bottom: 1rem;
   }
-}
-fieldset {
-    padding: 0.75rem;
-    margin: 0.75rem 0;
-  }
-  
-  legend {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  /* Reduce spacing in tight forms */
-  fieldset > * {
-    margin-bottom: 0.5rem;
-  }
-}
+ .signup {
+        width: 98%; /* Almost edge-to-edge */
+        padding: 20px 15px; /* Minimal padding */
+        margin: 5px auto; /* Very little margin */
+    }
+    
+.signup h2, 
+.signup legend {
+        font-size: 1.4rem; /* Smaller heading on tiny screens */
+    }
+}  
+
 
 /* ===== Fix for mobile touch targets ===== */
 @media (hover: none) and (pointer: coarse) {
